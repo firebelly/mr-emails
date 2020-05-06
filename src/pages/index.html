@@ -7,7 +7,7 @@ subject: Madison Rose Template
     <row class="collapse">
       <columns class="padded">
         <spacer size="15"></spacer>
-        <p class="small-text-center text-right tertiary">HAVING TROUBLE VIEWING THIS EMAIL?<br> <a href="*|ARCHIVE|*" target="_blank">CLICK HERE TO VIEW IT ONLINE</a></p>
+        <p class="small-text-center text-right tertiary">HAVING TROUBLE VIEWING THIS EMAIL?<br> &nbsp;<a href="*|ARCHIVE|*" target="_blank">CLICK HERE TO VIEW IT ONLINE</a></p>
       </columns>
     </row>
   </container>
@@ -56,14 +56,14 @@ subject: Madison Rose Template
     <spacer size="16"></spacer>
   </container>
 
-  <container class="user-content">
-    <img class="full" src="{{root}}assets/img/test-image.jpg">
+  <container class="user-content primary-image">
+    <img class="full" src="{{root}}assets/img/test-image.jpg" mc:edit="primary_image" width="690">
   </container>
 
   <container class="user-content">
 
-    <row>
-      <columns mc:hideable>
+    <row mc:hideable>
+      <columns>
         <spacer size="30"></spacer>
         <img src="{{root}}assets/img/test-image-2.jpg" mc:edit="first_item_image">
         <spacer size="30"></spacer>
@@ -76,6 +76,7 @@ subject: Madison Rose Template
 
     <row mc:repeatable="item" mc:variant="Text">
       <columns>
+        <spacer size="30"></spacer>
 
         <div mc:edit="item_content">
           <div class="user-content">
@@ -89,18 +90,18 @@ subject: Madison Rose Template
               <li>Built in 1969, Renovated 1972 / 2018</li>
             </ul>
 
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Ut enim ad <a href="http://foo.com">minim veniam, quis nostrud</a> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
           </div>
         </div>
 
       </columns>
     </row>
+
     <row mc:repeatable="item" mc:variant="Image + Caption">
       <columns>
 
-        <spacer size="30"></spacer>
-        <img src="{{root}}assets/img/test-image-2.jpg" mc:edit="item_image">
+        <img src="{{root}}assets/img/test-image-2.jpg" mc:edit="item_image" width="690">
         <spacer size="30"></spacer>
 
         <p class="caption">
@@ -128,21 +129,15 @@ subject: Madison Rose Template
 
 </wrapper>
 
-<wrapper class="pre-footer">
+<wrapper class="footer">
   <container>
-
     <div class="hide-for-desktop">
       <img src="{{root}}assets/img/prefooter-mobile.jpg">
     </div>
     <div class="show-for-large">
-      <img src="{{root}}assets/img/prefooter-desktop.jpg">
+      <img src="{{root}}assets/img/prefooter-desktop.jpg" width="690">
     </div>
 
-  </container>
-</wrapper>
-
-<wrapper class="footer">
-  <container>
     <spacer size="30"></spacer>
     <row>
       <columns large="7">
@@ -177,7 +172,7 @@ subject: Madison Rose Template
 
     <row>
       <columns>
-        <p>Copyright &copy; *|DATE:y|* Madison Rose</p>
+        <p>Copyright &copy; *|DATE:Y|* Madison Rose</p>
 
         <p>
           Want to change how you receive these emails?<br>
