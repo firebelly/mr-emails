@@ -25,7 +25,7 @@ td.large-6.last, th.large-6.last {
   padding-right: 50px;
 }
 
-// Custom type styles
+// Tophat is only area that uses tertiary (view in browser)
 .tertiary {
   font-family: Verdana, Arial, sans-serif;
   font-size: 10px;
@@ -34,6 +34,7 @@ td.large-6.last, th.large-6.last {
   color: $mr-coal;
 }
 
+// Image captions
 p.caption {
   font-family: Verdana, Arial, sans-serif;
   font-size: 12px;
@@ -43,9 +44,11 @@ p.caption {
   color: $mr-teak;
   padding-top: 12px;
   border-top: 1px solid $mr-tan;
-  margin-bottom: 30px;
-  Margin-bottom: 30px;
+  margin-bottom: 10;
+  Margin-bottom: 10;
 }
+
+// Typography tweaks
 h1 {
   margin-bottom: 0;
   Margin-bottom: 0;
@@ -127,19 +130,15 @@ p.cta {
 }
 
 // Footer styles
-.staggered-lawn {
-  table-layout: fixed;
-  border-collapse: collapse;
-  .grass {
-    width: 640px;
-    height: 90px;
-    vertical-align: middle;
-  }
-  .divot {
-    width: 50px;
-  }
-}
 .footer {
+  img {
+    width: 690px;
+    max-width: 100%;
+    height: auto;
+  }
+  .hide-for-desktop img {
+    width: 100%;
+  }
   .container {
     background: $mr-hemlock;
   }
@@ -181,6 +180,11 @@ p.cta {
         display: block;
       }
     }
+  }
+  // Mobile type
+  h1 {
+    font-size: 32px;
+    line-height: 115%;
   }
 }
 
