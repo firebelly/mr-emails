@@ -1,0 +1,206 @@
+// Madison Rose theme
+
+// Disable hyphenation
+td {
+  -webkit-hyphens: manual;
+  hyphens: manual;
+}
+
+// Body Styles
+body,
+html,
+.body {
+  background: #fff !important;
+}
+
+// Custom larger edge gutters
+td.large-7.first, th.large-7.first,
+td.large-12.first, th.large-12.first,
+td.large-6.first, th.large-6.first {
+  padding-left: 50px;
+}
+td.large-5.last, th.large-5.last,
+td.large-12.last, th.large-12.last,
+td.large-6.last, th.large-6.last {
+  padding-right: 50px;
+}
+
+// Custom type styles
+.tertiary {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  line-height: 150%;
+  letter-spacing: 0.08em;
+  color: $mr-coal;
+}
+
+p.caption {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 167%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $mr-teak;
+  padding-top: 12px;
+  border-top: 1px solid $mr-tan;
+  margin-bottom: 30px;
+  Margin-bottom: 30px;
+}
+h1 {
+  margin-bottom: 0;
+  Margin-bottom: 0;
+}
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+h4 {
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 143%;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: $mr-teak;
+}
+
+// Editable CTA buttons
+p.cta {
+  a {
+    display: block;
+    padding: 10px;
+    max-width: 350px;
+    border: 2px solid $mr-rose;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+  }
+}
+
+// View in browser hat
+.tophat  {
+  table.container {
+    background: #fff;
+  }
+  p {
+    margin: 0;
+    br {
+      display: none;
+    }
+  }
+}
+
+// Header
+.header {
+  p {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 167%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: $mr-rose;
+  }
+}
+
+// Custom UL (moved to default.html)
+// ul {
+//   padding-left: 1.5em;
+//   list-style-image: url('https://s3.amazonaws.com/firebelly/emails/mr/list-emdash.png');
+//   li {
+//     margin-bottom: 10px;
+//   }
+//   margin-bottom: 30px;
+//   Margin-bottom: 30px;
+// }
+
+
+// Logos
+.mr-logo {
+  display: block;
+  width: 175px;
+  max-width: 100%;
+  height: auto;
+}
+
+// Footer styles
+.staggered-lawn {
+  table-layout: fixed;
+  border-collapse: collapse;
+  .grass {
+    width: 640px;
+    height: 90px;
+    vertical-align: middle;
+  }
+  .divot {
+    width: 50px;
+  }
+}
+.footer {
+  .container {
+    background: $mr-hemlock;
+  }
+  h4 {
+    color: $mr-lichen;
+    border: none;
+    font-size: 12px;
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  color: $mr-cream;
+  a {
+    color: $mr-cream;
+    &.no-underline {
+      text-decoration: none;
+    }
+  }
+}
+
+// Copyright, update preferences, etc
+.shoes {
+  .container {
+    background: #fff;
+  }
+  p {
+    font-size: 10px;
+    line-height: 150%;
+  }
+}
+
+// Mobile styles
+@media only screen and (max-width: #{$global-breakpoint}) {
+  // Line break "view in browser" for mobile
+  .tophat  {
+    p {
+      br {
+        display: block;
+      }
+    }
+  }
+}
+
+// Fix for .hide-for-large (https://github.com/foundation/foundation-emails/issues/999#issuecomment-623077592)
+.hide-for-desktop {
+  display: none;
+  mso-hide: all;
+  overflow: hidden;
+  max-height: 0;
+  font-size: 0;
+  width: 0;
+  line-height: 0;
+}
+@media only screen and (max-width: #{$global-breakpoint}) {
+  .hide-for-desktop {
+    display: block !important;
+    width: auto !important;
+    overflow: visible !important;
+    max-height: none !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+}
