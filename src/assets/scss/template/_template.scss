@@ -42,10 +42,8 @@ p.caption {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: $mr-teak;
-  padding-top: 12px;
-  border-top: 1px solid $mr-tan;
-  margin-bottom: 10;
-  Margin-bottom: 10;
+  margin-bottom: 20px;
+  Margin-bottom: 20px;
 }
 
 // Typography tweaks
@@ -181,10 +179,17 @@ p.cta {
       }
     }
   }
+
+  // Max width images on mobile
+  .user-content img {
+    max-width: 100%!important;
+    height: auto!important;
+  }
+
   // Mobile type
   h1 {
-    font-size: 32px;
-    line-height: 115%;
+    font-size: 32px!important;
+    line-height: 115%!important;
   }
 }
 
