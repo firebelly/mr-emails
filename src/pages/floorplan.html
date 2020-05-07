@@ -1,5 +1,5 @@
 ---
-subject: Madison Rose General Template
+subject: Madison Rose Floorplan Template
 ---
 
 <wrapper class="tophat">
@@ -43,70 +43,88 @@ subject: Madison Rose General Template
       <columns>
         <h4>
           <span mc:edit="subhead">
-            Our New Podcast
+            111 E Wacker Drive, Chicago IL
           </span>
         </h4>
         <h1>
           <span mc:edit="headline">
-            Madison Rose would like to introduce our new “Further Faster” Podcast.
+            2,133,801 Total SF Available in Iconic River North High Rise
           </span>
         </h1>
       </columns>
     </row>
+    <spacer size="16"></spacer>
+  </container>
+
+  <container class="user-content primary-image">
+    <img class="full" src="{{root}}assets/img/placeholder-image-1.jpg" mc:edit="primary_image" width="690">
   </container>
 
   <container class="user-content">
 
-    <row mc:repeatable="item" mc:variant="Text + CTA">
+    <row mc:hideable>
       <columns>
-        <spacer size="10"></spacer>
-
-        <div mc:edit="text_content">
-          <div class="user-content">
-
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-          </div>
-        </div>
-
-        <p class="cta">
-          <span mc:edit="text_cta"><a href="http://foo.com">Listen On Soundcloud</a></span>
-        </p>
-
         <spacer size="30"></spacer>
-      </columns>
-    </row>
-
-    <row mc:repeatable="item" mc:variant="Image + Caption + CTA">
-      <columns>
-
-        <img src="{{root}}assets/img/placeholder-image-3.jpg" mc:edit="image_image" width="590">
+        <img src="{{root}}assets/img/placeholder-image-2.jpg" mc:edit="first_item_image" width="590">
         <spacer size="15"></spacer>
 
         <p class="caption">
-          <span mc:edit="image_caption">Classic mies Van der Rohe Architecture</span>
+          <span mc:edit="first_item_caption">Classic mies Van der Rohe Architecture</span>
         </p>
+      </columns>
+    </row>
 
-        <div mc:edit="image_content">
+    <row mc:repeatable="item" mc:variant="Text">
+      <columns>
+        <spacer size="30"></spacer>
+
+        <div mc:edit="item_content">
           <div class="user-content">
 
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2>111 E Wacker Drive, Chicago, IL 60601</h2>
+
+            <ul>
+              <li>Iconic & efficient Mies van der Rohe design</li>
+              <li>Exceedingly well-performing retail concourse</li>
+              <li>Located in the East Loop submarket at the nexus of River North & Michigan Avenue</li>
+              <li>Built in 1969, Renovated 1972 / 2018</li>
+            </ul>
+
+            <p>Ut enim ad <a href="http://foo.com">minim veniam, quis nostrud</a> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
           </div>
         </div>
 
-        <p class="cta">
-          <span mc:edit="image_cta"><a href="http://foo.com">Listen On Soundcloud</a></span>
-        </p>
-
-        <spacer size="30"></spacer>
       </columns>
     </row>
 
-    <spacer size="20"></spacer>
+    <row mc:repeatable="item" mc:variant="Image + Caption">
+      <columns>
 
+        <img src="{{root}}assets/img/placeholder-image-2.jpg" mc:edit="item_image" width="590">
+        <spacer size="15"></spacer>
+
+        <p class="caption">
+          <span mc:edit="item_caption">Classic mies Van der Rohe Architecture</span>
+        </p>
+
+      </columns>
+    </row>
+
+    <row>
+      <columns>
+
+        <p class="cta">
+          <span mc:edit="cta1"><a href="http://foo.com">Virtual Walk Through</a></span>
+        </p>
+        <p class="cta">
+          <span mc:edit="cta2"><a href="http://foo.com">View the floorplan</a></span>
+        </p>
+
+        <spacer size="50"></spacer>
+
+      </columns>
+    </row>
   </container>
 
 </wrapper>
