@@ -6,13 +6,6 @@ td {
   hyphens: manual;
 }
 
-// Body Styles
-body,
-html,
-.body {
-  background: #fff !important;
-}
-
 // Custom larger edge gutters
 td.large-7.first, th.large-7.first,
 td.large-12.first, th.large-12.first,
@@ -47,10 +40,6 @@ p.caption {
 }
 
 // Typography tweaks
-h1 {
-  margin-bottom: 0;
-  Margin-bottom: 0;
-}
 h1,
 h2,
 h3 {
@@ -69,10 +58,10 @@ h4 {
 p.cta {
   a {
     display: block;
-    padding: 10px;
     max-width: 350px;
+    padding: 10px;
     border: 2px solid $mr-rose;
-    text-decoration: none;
+    text-decoration: none !important;
     text-align: center;
     font-family: Verdana;
     font-size: 14px;
@@ -91,6 +80,70 @@ p.cta {
     margin: 0!important;
     br {
       display: none;
+    }
+  }
+}
+
+body#madrose {
+  .tophat {
+    table.container {
+      background: $mr-cream;
+    }
+  }
+  img.logo {
+    width: 70px;
+    max-width: 70px;
+    height: auto;
+  }
+
+  // Dark background content
+  .container.dark {
+    background: $mr-coal;
+  }
+  .wrapper.dark {
+    .container {
+      background: $mr-coal;
+      color: $mr-cream;
+      p.caption,
+      h4 {
+        border: none;
+        color: $mr-tan;
+      }
+      p {
+        color: $mr-cream;
+      }
+      h1 {
+        color: $mr-cream;
+        font-size: 26px;
+        line-height: 30px;
+        margin: 20px 0 30px 0;
+        Margin: 20px 0 30px 0;
+      }
+    }
+
+    p.cta {
+      text-align: center;
+      a {
+        background: $mr-rose;
+        // Using border instead of padding to fix Outlook issues
+        padding: 0;
+        border: 10px solid $mr-rose;
+        margin: 40px auto 30px auto;
+        Margin: 40px auto 30px auto;
+        color: $mr-cream;
+      }
+    }
+  }
+
+  .footer {
+    .container {
+      background: $mr-deep-pine;
+    }
+  }
+
+  .shoes {
+    .container {
+      background: $mr-cream;
     }
   }
 }
